@@ -71,7 +71,7 @@ LOOP/
 ├── frontend/
 ├── LOCAL_SETUP.md
 ├── SYSTEM_DEEP_DIVE.md
-├── GEMINI.md
+├── AI_RULES.md
 └── README.md
 ```
 
