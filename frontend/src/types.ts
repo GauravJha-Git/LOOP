@@ -1,4 +1,3 @@
-
 export type FeedbackType = 'BUG' | 'FEATURE' | 'CONFUSION' | 'SUGGESTION';
 export type FeedbackStatus = 'NEW' | 'ACCEPTED' | 'REJECTED' | 'RESOLVED';
 
@@ -15,7 +14,11 @@ export interface Project {
 
 export interface Feedback {
     id: number;
+    project_id: number;
     type: FeedbackType;
     description: string;
     status: FeedbackStatus;
+    submitter_email?: string | null;
+    created_at: string;
+    resolved_at?: string | null;
 }

@@ -235,6 +235,66 @@ button:focus {
   color: #334155;
 }
 
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.feedback-details {
+  display: grid;
+  gap: 6px;
+  font-size: 0.92rem;
+  color: #475569;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.status-new {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+.status-accepted {
+  color: #0369a1;
+  background: #e0f2fe;
+}
+
+.status-rejected {
+  color: #b45309;
+  background: #fef3c7;
+}
+
+.status-resolved {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.feedback-actions {
+  padding-top: 4px;
+}
+
+.feedback-action-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.feedback-error {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 640px) {
   .page-shell {
     padding: 16px 12px 28px;

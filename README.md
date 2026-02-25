@@ -1,80 +1,71 @@
-LOOP — Minimal Product Feedback System
+# LOOP — Minimal Product Feedback System
 
-LOOP is a lightweight feedback management system built to help developers collect, manage, and iterate on structured product feedback.
+**LOOP** is a lightweight feedback management system designed to help developers collect, manage, and iterate on structured product feedback efficiently.
 
-It focuses on clarity, correctness, and change resilience rather than feature overload or UI complexity.
+The system prioritizes **clarity, correctness, and resilience to change** over feature overload or unnecessary UI complexity.
 
-🚀 What It Does
+---
 
-Developers can:
+## 🚀 What It Does
 
-Create projects
+### For Developers
 
-Generate public feedback links
+* Create projects
+* Generate public feedback links
+* Collect structured feedback
+* Update feedback status *(NEW → ACCEPTED → RESOLVED / REJECTED)*
+* Maintain status history with notes
+* Enforce feedback expiry *(3 / 5 / 7 days)*
 
-Collect structured feedback
+### For Public Users
 
-Update feedback status (NEW → ACCEPTED → RESOLVED / REJECTED)
+* Open shared feedback links
+* View project details
+* Submit categorized feedback
 
-Maintain status history with notes
+---
 
-Enforce feedback expiry (3 / 5 / 7 days)
+## 🏗 Tech Stack
 
-Public users can:
+### Frontend
 
-Open shared feedback link
+* React + TypeScript
+* Axios
+* Clean minimal UI
 
-View project details
+### Backend
 
-Submit categorized feedback
+* Flask (REST API)
+* Flask-JWT-Extended
+* Flask-SQLAlchemy
+* SQLite (relational database)
 
-🏗 Tech Stack
+---
 
-Frontend:
+## 🔁 Core Flow
 
-React + TypeScript
+1. User signs up / logs in
+2. Creates a project
+3. Shares public feedback link
+4. Users submit feedback
+5. Developer reviews and updates status
+6. Status history is recorded
 
-Axios
+---
 
-Clean minimal UI
+## 🧠 Key Design Principles
 
-Backend:
+* Simple, readable architecture
+* Enum-based state safety
+* Protected routes with JWT
+* Clear separation of concerns
+* Small, structured system over feature-heavy design
 
-Flask (REST API)
+---
 
-Flask-JWT-Extended
+## 📂 Project Structure
 
-Flask-SQLAlchemy
-
-SQLite (relational database)
-
-🔁 Core Flow
-
-User signs up / logs in
-
-Creates a project
-
-Shares public feedback link
-
-Users submit feedback
-
-Developer reviews and updates status
-
-Status history is recorded
-
-🧠 Key Design Principles
-
-Simple, readable architecture
-
-Enum-based state safety
-
-Protected routes with JWT
-
-Clear separation of concerns
-
-Small, structured system over feature-heavy design
-
-📂 Project Structure
+```
 LOOP/
 ├── backend/
 ├── frontend/
@@ -82,14 +73,23 @@ LOOP/
 ├── SYSTEM_DEEP_DIVE.md
 ├── GEMINI.md
 └── README.md
-🛠 Setup
+```
 
-See LOCAL_SETUP.md for full instructions to run locally.
+---
 
-📄 Additional Documentation
+## 🛠 Setup
 
-SYSTEM_DEEP_DIVE.md → Architecture & technical decisions
+Refer to **LOCAL_SETUP.md** for complete instructions to run the project locally.
 
-GEMINI.md → AI usage and constraints
+---
 
-LOOP was built to demonstrate the ability to turn an idea into usable software quickly while keeping the system understandable and correct.
+## 📄 Additional Documentation
+
+* **SYSTEM_DEEP_DIVE.md** → Architecture details and technical decisions
+* **GEMINI.md** → AI usage and constraints
+
+---
+
+## ✨ Purpose
+
+LOOP was built to demonstrate how an idea can quickly evolve into usable software while keeping the system understandable, structured, and technically sound.
